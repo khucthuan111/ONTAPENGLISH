@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiểm Tra EngLish</title>
+<style>
+:root{--ink:#203451;--muted:#53677f;--green:#087d62;--mint:#d8fff0;--gold:#ffd34f;--pink:#ff5fa2;--violet:#8055f6;--sky:#42d9ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial;background:linear-gradient(125deg,#a9f5e2 0%,#d9f7a8 26%,#fff0a8 53%,#ffc9e4 78%,#c9c5ff 100%);background-attachment:fixed}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 8% 8%,#ffffffb8 0 4%,transparent 27%),radial-gradient(ellipse at 92% 20%,#56e8d477,transparent 32%),radial-gradient(ellipse at 70% 95%,#ff78bd55,transparent 35%),radial-gradient(ellipse at 50% 50%,#fff9 0 1%,transparent 48%)}
+header{padding:30px 16px 18px;text-align:center;position:relative;overflow:hidden}.eyebrow{color:#8b4bd0;letter-spacing:4px;font-size:12px;font-weight:1000}.hero{font-size:clamp(32px,8vw,60px);line-height:1.05;margin:10px 0;color:#087d62;text-shadow:0 3px 0 #fff,0 7px 0 #ffe17a,0 10px 22px #438c8b55}.sub{color:#385b6a;max-width:680px;margin:auto;font-weight:650}
+.wrap{max-width:940px;margin:auto;padding:12px 15px 65px}.toolbar,.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:15px 0}
+button,select{font:inherit;color:#214337;background:#fff;border:1px solid #a8d9c1;border-radius:16px;padding:12px 16px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:background .14s,border-color .14s,box-shadow .14s,transform .14s}button:hover{box-shadow:0 7px 16px #237a5030;border-color:#329b70}button:active{transform:scale(.97)}button.primary{background:linear-gradient(110deg,#ff4f9a,#9257ff 52%,#00bda2);color:white;border:0;font-weight:900;box-shadow:0 8px 20px #8c55bc44}button.active{background:#176f50;color:white;border-color:#176f50}
+.card{background:linear-gradient(145deg,#ffffffd9,#f7fffbba);backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);border:1.5px solid #ffffffd9;border-radius:25px;padding:20px;margin:17px 0;box-shadow:0 12px 30px #5d438a20,0 3px 0 #ffffffaa inset;position:relative}
+h2{margin:0 0 12px;font-size:23px;color:#087d62}h3{margin:8px 0}.muted{color:var(--muted)}.pill{display:inline-block;padding:4px 11px;border-radius:99px;background:linear-gradient(100deg,#d7fff0,#fff0b7);color:#087d62;font-size:12px;font-weight:950;border:1px solid #a9e9cf}
+.q{padding:16px 0;border-bottom:1px solid #e1eee6}.q:last-child{border:0}.qtitle{font-weight:800;margin-bottom:11px;color:#243b4d}.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.opt{text-align:left;background:#f7fffc;border:1px solid #c8e8d4;color:#254638;width:100%;min-height:48px}.opt.chosen{background:#dcfff1;border:2px solid #149565;box-shadow:0 0 0 3px #28bd7b22;animation:pop .2s ease}.opt.correct{background:#d8ffdf;border:2px solid #269b57}.opt.wrong{background:#ffe0e7;border:2px solid #dc5473;animation:shake .24s ease}
+@keyframes pop{50%{transform:scale(1.018)}}@keyframes shake{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+.result{font-weight:850;color:#15794f}.bar{height:10px;background:#e0eee5;border-radius:9px;overflow:hidden;margin:12px 0}.bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#26c49a,#ffbd4d,#f46aa8);transition:width .2s}
+input.answer{width:100%;padding:13px;border-radius:13px;background:#f7fff9;border:1px solid #b8ddc6;color:#203b31;font-size:15px;margin:8px 0;outline-color:#25a56e}.small{font-size:13px;color:#617b70}
+.music{display:grid;grid-template-columns:1fr;gap:10px}.music iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:18px;background:#111}
+.music-picks{display:flex;flex-wrap:wrap;gap:8px}
+.music-picks button,.music-link{font-size:14px;padding:10px 13px;border-radius:14px;text-decoration:none}
+.music-link{display:inline-flex;align-items:center;background:#f7efff;color:#7042b6;border:1px solid #dec9ff;font-weight:800}
+.now-playing{font-size:13px;font-weight:900;color:#087d62;background:#e4fff3;border-radius:12px;padding:9px 12px}
+
+/* FLOWER DIMENSION — fantasy meadow with gently swaying flowers */
+body{
+ color:#f5f1ff;
+ background:
+   radial-gradient(ellipse at 50% 12%,#7968b8 0%,transparent 35%),
+   radial-gradient(ellipse at 12% 65%,#234d65 0%,transparent 38%),
+   radial-gradient(ellipse at 88% 72%,#5d326e 0%,transparent 40%),
+   linear-gradient(160deg,#101d3d 0%,#202b58 38%,#49305f 72%,#172b46 100%);
+ background-attachment:fixed;
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+ background:
+  radial-gradient(circle at 15% 18%,#fff 0 1px,transparent 2px),
+  radial-gradient(circle at 82% 24%,#fff 0 1px,transparent 2px),
+  radial-gradient(circle at 66% 11%,#f8dfff 0 1px,transparent 2px),
+  radial-gradient(circle at 32% 40%,#fff 0 1px,transparent 2px),
+  radial-gradient(circle at 92% 55%,#fff 0 1px,transparent 2px),
+  radial-gradient(ellipse at 50% 100%,#ffb7db22,transparent 55%);
+ background-size:190px 170px,230px 210px,170px 200px,250px 230px,210px 190px,auto;
+ animation:starDrift 28s linear infinite;
+}
+header,.wrap{position:relative;z-index:3}
+.eyebrow{color:#e2b8ff}
+.hero{color:#a8ffe9;text-shadow:0 0 18px #8af6ff66,0 4px 22px #e88cff55}
+.sub{color:#e4dcff}
+.card{
+ color:#f4edff;
+ background:linear-gradient(145deg,#ffffff20,#d9c8ff12);
+ border:1px solid #ffffff38;
+ box-shadow:0 16px 44px #050b263d,0 1px 0 #ffffff30 inset;
+}
+h2{color:#a9ffe9}
+.muted{color:#d6cbed}
+.pill{background:#b6ffe51c;color:#b6ffe5;border-color:#9df7d477}
+button,select{color:#f7efff;background:#322c58;border-color:#8c78b8}
+button.primary{background:linear-gradient(110deg,#b54b9d,#7656ce 55%,#27a99e)}
+.opt{background:#292e56;color:#f5efff;border-color:#68699d}
+.opt.chosen{background:#365c68;border-color:#8df2d2}
+.opt.correct{background:#245d4e;border-color:#63e4a4}
+.opt.wrong{background:#63364f;border-color:#ff8bb2}
+input.answer{background:#252c51;color:#fff;border-color:#8078b2}
+.small,footer{color:#c4b9df}
+.result{color:#a6ffdc}
+.bar{background:#ffffff25}
+.bar>i{background:linear-gradient(90deg,#77f6d1,#b8a0ff,#ff9fc9)}
+.music-link{background:#3c315e;color:#e8c7ff;border-color:#9c7cc6}
+.now-playing{background:#a7ffe51c;color:#a8ffe9}
+.flower-field{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.flower{
+ position:absolute;bottom:-5px;width:var(--w,78px);height:var(--h,230px);
+ transform-origin:50% 100%;animation:flowerSway var(--speed,5s) ease-in-out infinite alternate;
+ filter:drop-shadow(0 4px 12px #070d2d66);
+}
+.flower .stem{
+ position:absolute;bottom:0;left:50%;width:5px;height:76%;
+ border-radius:99px;background:linear-gradient(90deg,#285d57,#8ed69a,#285d57);
+ transform:rotate(var(--lean,0deg));transform-origin:bottom;
+}
+.flower .leaf{
+ position:absolute;bottom:var(--leaf-y,38%);left:50%;width:34px;height:16px;
+ border-radius:100% 0 100% 0;background:linear-gradient(135deg,#a4eaa1,#367d72);
+ transform:rotate(var(--leaf-r,28deg));box-shadow:inset 0 1px 2px #ffffff55;
+}
+.flower .leaf.two{left:calc(50% - 31px);transform:scaleX(-1) rotate(25deg);bottom:55%}
+.flower .bloom{
+ position:absolute;left:50%;top:0;width:var(--b,48px);height:var(--b,48px);
+ transform:translateX(-50%);border-radius:50%;
+ background:
+  radial-gradient(circle at 50% 50%,#ffeaa1 0 13%,#f7b95d 14% 21%,transparent 22%),
+  radial-gradient(ellipse at 50% 8%,var(--petal,#ffb8df) 0 23%,transparent 25%),
+  radial-gradient(ellipse at 92% 38%,var(--petal,#ffb8df) 0 23%,transparent 25%),
+  radial-gradient(ellipse at 78% 88%,var(--petal,#ffb8df) 0 23%,transparent 25%),
+  radial-gradient(ellipse at 22% 88%,var(--petal,#ffb8df) 0 23%,transparent 25%),
+  radial-gradient(ellipse at 8% 38%,var(--petal,#ffb8df) 0 23%,transparent 25%);
+ filter:drop-shadow(0 0 10px color-mix(in srgb,var(--petal) 55%,transparent));
+}
+.flower:nth-child(2n){animation-delay:-2.3s}
+.flower:nth-child(3n){animation-delay:-1.1s}
+.flower:nth-child(4n){animation-delay:-3.6s}
+@keyframes flowerSway{from{transform:rotate(calc(var(--lean,0deg) - 5deg))}to{transform:rotate(calc(var(--lean,0deg) + 5deg))}}
+@keyframes starDrift{from{background-position:0 0,0 0,0 0,0 0,0 0,center}to{background-position:190px 170px,-230px 210px,170px -200px,-250px 230px,210px -190px,center}}
+@media(max-width:700px){
+ .flower{opacity:.92}
+ .flower:nth-child(n+10){display:none}
+ .flower-field{opacity:.9}
+ .card{background:linear-gradient(145deg,#ffffff24,#d9c8ff19)}
+}
+@media(prefers-reduced-motion:reduce){.flower,.flower-field,body:before{animation:none!important}}
+footer{text-align:center;color:#6c897a;padding:20px;font-size:12px}.wrap,header{position:relative;z-index:3}
+@media(max-width:600px){.opts{grid-template-columns:1fr}.card{padding:16px}.toolbar button{flex:1}.qtitle{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head><body>
+
+
+<div class="flower-field" aria-hidden="true"><div class="flower" style="left:4%;bottom:220px;--w:190px;--h:380px;--petal:#ffb9df;--lean:-4deg;--speed:5.2s;--b:58px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:12%;bottom:150px;--w:145px;--h:290px;--petal:#b7c5ff;--lean:3deg;--speed:6.1s;--b:44px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:23%;bottom:95px;--w:180px;--h:360px;--petal:#ffe0a8;--lean:-2deg;--speed:4.7s;--b:40px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:70%;bottom:120px;--w:170px;--h:340px;--petal:#c8b5ff;--lean:2deg;--speed:5.7s;--b:45px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:83%;bottom:170px;--w:210px;--h:420px;--petal:#ffaed5;--lean:-3deg;--speed:5.1s;--b:55px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:93%;bottom:230px;--w:165px;--h:330px;--petal:#a9f4e2;--lean:4deg;--speed:6.3s;--b:42px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:35%;bottom:5px;--w:115px;--h:230px;--petal:#ffd2e8;--lean:-5deg;--speed:5.8s;--b:35px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:58%;bottom:15px;--w:125px;--h:250px;--petal:#b8d7ff;--lean:4deg;--speed:4.9s;--b:38px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:1%;bottom:300px;--w:120px;--h:240px;--petal:#d7c2ff;--lean:-2deg;--speed:6.4s;--b:36px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:88%;bottom:310px;--w:130px;--h:260px;--petal:#ffe2a8;--lean:3deg;--speed:5.4s;--b:39px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:29%;bottom:-10px;--w:155px;--h:310px;--petal:#ffb6cc;--lean:2deg;--speed:5.9s;--b:40px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div><div class="flower" style="left:76%;bottom:-5px;--w:135px;--h:270px;--petal:#b8f0d4;--lean:-3deg;--speed:4.8s;--b:37px"><i class="stem"></i><i class="leaf"></i><i class="leaf two"></i><i class="bloom"></i></div></div>
+<header><div class="eyebrow">LEVEL UP YOUR ENGLISH</div><div class="hero">Kiểm Tra EngLish ✦</div><p class="sub">Gộp 4 đề thành một bộ luyện tập tinh gọn. Chọn đáp án, chấm điểm và lên level tiếng Anh — chiến thôi!</p>
+</header>
+<div class="wrap">
+<div class="toolbar">
+<button onclick="document.getElementById('musicPlayer').scrollIntoView({behavior:'smooth'})" class="primary">♫ Chọn nhạc</button>
+<button type="button" id="reset">↻ Làm lại bài</button>
+</div>
+<div class="card music" id="musicPlayer">
+  <div><span class="pill">STUDY PLAYLIST</span><h2>🎧 Nhạc chill để học & thư giãn</h2>
+  <p class="muted">Bật playlist chill dài hơn 90 phút hoặc chọn soft chill 1 giờ để vừa học vừa thư giãn.</p></div>
+  <div class="music-picks">
+    <button type="button" class="primary" onclick="playMusic('0rQT9cA3Nqw','Chill hits 2026 · 1 giờ 31 phút')">🌙 Chill hits 2026 · 1 giờ 31 phút</button>
+    <button type="button" onclick="playMusic('NcqzdUdWi6I','Soft chill songs · 1 giờ')">✨ Soft chill songs · 1 giờ</button>
+    <a class="music-link" href="https://www.youtube.com/results?search_query=Tate+McRae+Housewife+Official+Video" target="_blank" rel="noopener">Housewife · Tate McRae ↗</a>
+    <a class="music-link" href="https://www.youtube.com/results?search_query=KAROL+G+BbY+WOW+Official+Video" target="_blank" rel="noopener">BbY WOW · KAROL G ↗</a>
+    <a class="music-link" href="https://www.youtube.com/results?search_query=AD%C3%89LA+Nicole+Kidman+Official+Video" target="_blank" rel="noopener">Nicole Kidman · ADÉLA ↗</a>
+    <a class="music-link" href="https://www.youtube.com/results?search_query=Ashe+Stop+The+Wedding+Official+Audio" target="_blank" rel="noopener">Stop The Wedding! · Ashe ↗</a>
+  </div>
+  <div class="now-playing" id="nowPlaying">Đang chọn: Chill hits 2026 · 1 giờ 31 phút</div>
+  <iframe id="musicFrame" src="https://www.youtube-nocookie.com/embed/0rQT9cA3Nqw?rel=0" title="Chill hits trending 2026 playlist" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p class="small">Bước vào khu vườn mộng mơ — hoa khẽ đung đưa theo gió ✨ Nhạc được phát từ YouTube.</p>
+</div>
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap"><div><span class="pill" id="sectionTag">70 CÂU · TEST 111–114</span><h2 id="sectionTitle">Trắc nghiệm tổng hợp</h2></div><div class="result" id="score">0 / 70 đúng</div></div>
+<div class="bar"><i id="progress"></i></div><div id="quiz"></div>
+<div class="toolbar"><button type="button" class="primary" id="grade">✓ Chấm bài</button><button type="button" id="showAnswers">Hiện đáp án</button></div><p id="feedback" class="result"></p>
+</div>
+<footer>A little dreamy garden for your English practice ✦</footer>
+</div>
+<script>
+const tests = [{"title":"TỔNG HỢP TEST 111–114","q":[["Regular exercise helps people maintain a healthy ______ and reduces the risk of many diseases.",["lifestyle","generation","argument","pressure"],0],["A healthy diet should include enough vitamins and minerals to help the body function ______.",["properly","separately","suddenly","carelessly"],0],["Parents should listen to their children's opinions instead of forcing them to follow every ______.",["nutrient","rule","symptom","lifestyle disease"],1],["Open communication can help family members understand and respect each other's ______.",["differences","calories","illnesses","exercises"],0],["To live a longer and healthier life, you should ______ smoking and exercise regularly.",["give up","look after","find out","get into"],0],["Parents should teach their children how to ______ their health by eating well and exercising regularly.",["find out","look after","get rid","come back"],1],["Both parents and teenagers need to ______ changes in society and understand each other's needs.",["give up","find out","adapt to","take away"],2],["Drinking enough water helps the body function properly and prevents ______.",["dehydration","generation","communication","independence"],0],["People who want to live longer should develop healthy ______, such as eating well and sleeping enough.",["habits","gaps","arguments","generations"],0],["Parents and teenagers should have open ______ to understand each other's feelings and opinions.",["communication","argument","generation","decision"],0],["Smoking is extremely ______ because it can cause serious health problems.",["danger","dangerously","dangerous","endanger"],2],["A balanced diet provides the body with the nutrients it needs for normal ______.",["grow","growth","growing","grown"],1],["Parents should listen ______ to their children's opinions and concerns.",["careful","carefully","care","careless"],1],["We ______ Doris last Sunday.",["don't see","haven't seen","didn't see","hadn't seen"],2],["Robert is going to be famous someday. He ______ in three movies already.",["was appearing","had appeared","has appeared","appeared"],2],["All students ______ wear uniforms at school because it is a rule.",["should","have to","ought to","must"],1],["You ______ finish your homework before you go to bed.",["must","have to","should","ought to"],0],["Eating fresh fruit and vegetables is an important part of a ______ diet.",["harmful","balanced","stressful","traditional"],1],["Too much stress can have a negative effect on our ______ health.",["elderly","mental","private","personal"],1],["Teenagers often want more ______ from their parents as they grow older.",["independence","permission","exercise","nutrition"],0],["Although they disagree about social media, the father and his son try to find a solution to their ______.",["balance","conflict","benefit","routine"],1],["Doctors are trying to ______ why some people develop serious health problems at an early age.",["give up","cut down on","find out","get into"],2],["If you want to reduce your sugar intake, you should ______ sugary drinks and sweets.",["rely on","cut down on","get on with","come into"],1],["Many teenagers are ______ modern technology, while their grandparents may prefer traditional ways of communicating.",["interested in","confident in","responsible for","different from"],0],["Young people should not always ______ their parents to solve every problem; they should learn to be independent.",["complain about","rely on","adapt to","come into"],1],["Eating too much fast food may have a negative ______ on your health.",["effect","result","cause","reason"],0],["To stay healthy, you should ______ regular exercise instead of spending all day sitting in front of a screen.",["do","make","take","get"],0],["Parents and children should try to ______ a compromise when they have different opinions.",["do","make","take","get"],1],["Getting enough sleep is ______ for both physical and mental health.",["importance","important","importantly","import"],1],["Many people are becoming more ______ of the benefits of healthy eating.",["awareness","aware","unawarely","awaring"],1],["Parents should be ______ when discussing sensitive issues with their children.",["patience","patiently","impatiently","patient"],3],["In 1996, my brother ______ at Harvard university.",["studies","is studying","studied","had"],2],["It is the first time I ______ snow.",["ever saw","ever see","have ever seen","had ever seen"],2],["I will lend you some money, but you ______ pay it back to me next week.",["should","have to","must","mustn't"],2],["Hoa ______ feed the cats because her mother has done it already.",["has to","doesn't have to","must","Both A and C"],1],["People should get enough sleep every night to improve their physical and mental ______.",["permission","conflict","well-being","behaviour"],2],["Doing regular physical activity can help prevent some health problems and increase life ______.",["argument","expectancy","generation","relationship"],1],["The generation gap refers to differences in opinions and behaviour between younger and older ______.",["ingredients","generations","symptoms","nutrients"],1],["Teenagers should be encouraged to express their opinions politely and show ______ for their parents.",["respect","pressure","argument","independence"],0],["Regular physical activity can help people ______ stress and improve their mental health.",["deal with","complain about","come back","take away"],0],["To maintain a healthy lifestyle, we should ______ unhealthy habits and replace them with good ones.",["get rid of","look forward to","get on with","take after"],0],["Parents and teenagers may have different opinions, but they should listen to each other ______.",["for a long time","at the same time","according to","into the future"],1],["A typical nuclear family usually ______ two parents and their children.",["deals with","consists of","comes back","gets rid of"],1],["Getting enough sleep is important for maintaining good ______ health.",["mental","physical","social","All of the above"],3],["Doctors advise people to do regular exercise to reduce the risk of ______ diseases.",["chronic","delicious","convenient","traditional"],0],["Spending quality time together can help family members ______ strong relationships.",["build","make","do","take"],0],["Strict rules and a lack of understanding can sometimes lead to family ______.",["conflict","health","balance","habit"],0],["People should exercise ______ to improve their physical health.",["regular","regularity","regularly","regulate"],2],["A healthy lifestyle can help prevent many common ______.",["ill","illness","illnesses","illing"],2],["Family members should treat one another with kindness and ______.",["respectful","respect","respectfully","disrespectful"],1],["Last month my brother ______ me his photos.",["sent","sends","send","is sending"],0],["They ______ to the cinema tonight several times.",["has gone","have gone","go","went"],1],["In case you've suffered from the injury, you ______ see the doctor today.",["had better","must","ought","have better"],0],["Water park is free for kids under 6 years old, so you ______ pay money for your son.",["have to","mustn't","should","don't have to"],3],["Walking for thirty minutes a day can help people stay ______ and energetic.",["active","dependent","narrow-minded","impatient"],0],["Doctors advise people to avoid smoking because it is ______ to their health.",["beneficial","nutritious","harmful","reliable"],2],["Parents and teenagers sometimes have conflicts because they have different ______ about fashion and lifestyle.",["viewpoints","exercises","routines","habits"],0],["My father is a ______ person who is always willing to listen to, think about and accept new ideas.",["creative","close-minded","conservative","open-minded"],3],["Many older people need someone to ______ them when they are ill or unable to do daily tasks.",["find out","look after","give up","come into"],1],["You should not ______ fast food to meet all your nutritional needs because it may contain too much fat and salt.",["rely on","look after","get rid of","come back"],0],["Teenagers should learn to ______ their parents instead of arguing whenever they have different opinions.",["get on with","get rid of","cut down on","find out"],0],["It is important for parents to ______ their children about school, friends, and future plans.",["discuss","discuss with","discuss about","discuss to"],1],["Doing exercise regularly can help teenagers ______ a healthy lifestyle.",["make","lead","take","build up"],1],["Parents should give their children useful ______ instead of making every decision for them.",["advice","advices","advise","advising"],0],["Good communication can help parents and teenagers ______ their differences peacefully.",["resolve","create","increase","encourage"],0],["Regular exercise and a balanced diet are important for the ______ of a long and healthy life.",["achieve","achievement","achievable","achieving"],1],["Some teenagers find it difficult to express their feelings ______ to their parents.",["open","openness","openly","opening"],2],["Parents should encourage their children's ______ instead of making every decision for them.",["responsible","responsibility","responsibly","respond"],1],["Their friends ______ our school yesterday.",["visit","visits","visited","have visited"],2],["I ______ lots about the job so far.",["have learnt","am learning","had learnt","learnt"],0]]}];
+let current=0, answers={}, graded=false, rewriteShown=false;
+const $=id=>document.getElementById(id);
+function renderTabs(){}
+function playMusic(id,label){$('musicFrame').src='https://www.youtube-nocookie.com/embed/'+id+'?rel=0&autoplay=1';$('nowPlaying').textContent='Đang chọn: '+label;}
+function switchTest(i=0){current=0;graded=false;$('grade').style.display='';$('showAnswers').style.display='';$('sectionTag').textContent='70 CÂU · TEST 111–114';$('sectionTitle').textContent='Trắc nghiệm tổng hợp';$('quiz').innerHTML=tests[0].q.map((q,n)=>`<div class="q"><div class="qtitle">${n+1}. ${q[0]}</div><div class="opts">${q[1].map((o,j)=>`<button type="button" class="opt" id="o${n}_${j}" onclick="choose(${n},${j})">${'ABCD'[j]}. ${o}</button>`).join('')}</div><div class="small" id="note${n}"></div></div>`).join('');$('feedback').textContent='';updateScore()}
+function choose(n,j){answers[current+'_'+n]=j;for(let k=0;k<4;k++)$('o'+n+'_'+k).classList.toggle('chosen',k===j);$('feedback').textContent='Đã chọn '+ 'ABCD'[j]+' ✓';updateScore()}
+function updateScore(){let count=tests[current].q.filter((q,n)=>answers[current+'_'+n]===q[2]).length;$('score').textContent=count+' / '+tests[current].q.length+' đúng';let done=tests[current].q.filter((q,n)=>answers[current+'_'+n]!==undefined).length;$('progress').style.width=(done/tests[current].q.length*100)+'%'}
+function grade(){let score=0;tests[current].q.forEach((q,n)=>{let a=answers[current+'_'+n];if(a===q[2])score++;for(let j=0;j<4;j++){let b=$('o'+n+'_'+j);b.classList.remove('correct','wrong');if(j===q[2])b.classList.add('correct');else if(j===a)b.classList.add('wrong')}$('note'+n).textContent='Đáp án: '+ 'ABCD'[q[2]]+'. '+q[1][q[2]]});graded=true;$('feedback').textContent=`Kết quả: ${score}/${tests[current].q.length} — ${score>=Math.ceil(tests[current].q.length*.9)?'Đỉnh quá! 🌟':score>=Math.ceil(tests[current].q.length*.7)?'Ổn áp, cố thêm chút! 💪':'Sai là cơ hội lên level, làm lại nhé! 🚀'}`;updateScore()}
+function reveal(){tests[current].q.forEach((q,n)=>{answers[current+'_'+n]=q[2];choose(n,q[2])});grade()}
+$('grade').onclick=grade;$('showAnswers').onclick=reveal;
+$('reset').onclick=()=>{answers={};graded=false;switchTest(current)};
+switchTest(0);
+document.addEventListener('pointerdown',e=>{const b=e.target.closest('button.opt');if(b)b.style.filter='brightness(.96)'},{passive:true});document.addEventListener('pointerup',e=>{const b=e.target.closest('button.opt');if(b)b.style.filter=''} ,{passive:true});
+// Music is streamed from YouTube; copyrighted audio is not bundled.
+
+</script></body></html>
